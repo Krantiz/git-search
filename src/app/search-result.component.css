@@ -1,0 +1,6 @@
+.result-card{
+  display: flex;
+    padding: 20px;
+    background-color: #deeff2;
+    margin: 10px;
+}

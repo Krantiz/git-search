@@ -1,0 +1,42 @@
+<div class="search-history-section">
+  <div style="width: 100%">
+    <h1>Your Search History</h1>
+    <button
+      class="btn btn-primary"
+      style="background-color: #55acee"
+      (click)="clearData()"
+    >
+      <i class="fab fa-twitter me-2"></i> Clear History
+    </button>
+    <div>
+      <div class="table">
+        <div>Search Term</div>
+        <div>Search Result</div>
+      </div>
+      <div class="table table-value" *ngFor="let result of historicalData">
+        <div>Search Term: {{ result.searchTerm }}</div>
+        <div>
+          <div class="result-card" *ngFor="let data of result.data">
+            <div>
+              <div>UserImage</div>
+              <div>
+                <a href="{{ data.html_url }}" target="_blank">
+                  <img
+                    src="{{ data.avatar_url }}"
+                    alt=""
+                    style="width: 100px; height: 100px"
+                  />
+                </a>
+              </div>
+            </div>
+            <div style="margin: 0 8px">
+              <div>GitHub UserName</div>
+              <div>Login: {{ data.login }}</div>
+              <div>Type: {{ data.type }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

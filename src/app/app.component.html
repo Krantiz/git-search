@@ -1,0 +1,18 @@
+<div class="main">
+  <nav class="nav-bar">
+    <ul>
+      <li (click)="toggleView('search')" [ngStyle]="{'background-color': (viewType=='search') ? '#15bb15' : '#d75d77'}"><a href="#"> Home </a></li>
+      <li (click)="toggleView('history')"  [ngStyle]="{'background-color': (viewType=='history') ? '#15bb15' : '#d75d77'}"><a href="#"> History </a></li>
+    </ul>
+  </nav>
+</div>
+
+<div *ngIf="viewType == 'search'">
+  <app-search></app-search>
+</div>
+<div *ngIf="viewType == 'history'">
+  <history></history>
+</div>
+
+
+

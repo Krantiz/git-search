@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d75d77;
+  border: 2px solid pink;
+}
+
+.nav-bar {
+  word-spacing: 40px;
+  font-size: 20px;
+  font-family: arial;
+  margin-right: 1rem;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 1rem;
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.nav-bar ul li:hover {
+  border-bottom: 2px solid gray;
+  background-color: #e91e63;
+  color: white;
+}
+
+
