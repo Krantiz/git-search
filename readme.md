@@ -13,6 +13,8 @@ To run this application in local:
 ## Assumptions and Explanations
 - I have not used any routing and kept the functionality as simple as possible
 - Tried level best to acheive the good UI in limited time
+- I have not destroyed the subscription (Realized while submitting the code so mentioning it over here.)
+- It is not the best optimised code but I can improve it if more time is given.
 
 
 ## UnitTest Cases
